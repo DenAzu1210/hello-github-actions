@@ -2,7 +2,7 @@ modules = ["nodejs-20"]
 run = "node index.js"
 [nix]
 channel = "stable-24_05"
-packages = ["nmh"]
+packages = ["nmh", "newman", "yakut"]
 
 [deployment]
 run = ["sh", "-c", "node index.js"]
