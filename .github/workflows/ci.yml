@@ -1,12 +1,12 @@
-name: API Tests
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Newman
-        run: npm install -g newman
-      - name: Run tests
-        run: npm test
+        {
+          "name": "api-tests",
+          "version": "1.0.0",
+          "description": "Automatización de pruebas API con Newman",
+          "main": "index.js",
+          "scripts": {
+            "test": "newman run HR_API_Tests.postman_collection.json -e EntornoEmpresarialApi.postman_environment.json --reporters cli,junit --reporter-junit-export results.xml"
+          },
+          "author": "",
+          "license": "ISC",
+          "dependencies": {}
+        }
