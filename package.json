@@ -4,9 +4,9 @@
   "description": "Automatización de pruebas API con Newman",
   "main": "index.js",
   "scripts": {
-    "test": "newman run HR_API_Tests.postman_collection.json -e EntornoEmpresarialApi.postman_environment.json"
+    "test": "newman run HR\\API\\Tests.postman_collection.json -e Entorno\\Api.postman_environment.json --reporters cli,junit --reporter-junit-export results.xml"
   },
-  "author": "Denisse",
+  "author": "",
   "license": "ISC",
   "dependencies": {}
 }
