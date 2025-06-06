@@ -1,12 +1,12 @@
-        {
-          "name": "api-tests",
-          "version": "1.0.0",
-          "description": "Automatización de pruebas API con Newman",
-          "main": "index.js",
-          "scripts": {
-            "test": "newman run HR_API_Tests.postman_collection.json -e EntornoEmpresarialApi.postman_environment.json --reporters cli,junit --reporter-junit-export results.xml"
-          },
-          "author": "",
-          "license": "ISC",
-          "dependencies": {}
-        }
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas API con Newman",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run HR_API_Tests.postman_collection.json -e EntornoEmpresarialApi.postman_environment.json"
+  },
+  "author": "Denisse Cruz",
+  "license": "ISC",
+  "dependencies": {}
+}
